@@ -1,0 +1,31 @@
+//
+//  Person.cpp
+//  Versuch8
+//
+//  Created by Julius Wolf on 13.06.23.
+//
+
+#include "Person.hpp"
+// Konstruktor
+Person::Person(std::string initName, Datum initGeburtsdatum)
+: name(initName)
+, geburtsdatum(initGeburtsdatum)
+{
+}
+
+// Destruktor
+Person::~Person()
+{
+}
+
+// Zugriffsfunktion auf das Geburtsdatum
+Datum Person::getGeburtsdatum() const
+{
+    return geburtsdatum;
+}
+
+// Zugriffsfunktion auf den Namen
+std::string Person::getName() const
+{
+    return name;
+}
